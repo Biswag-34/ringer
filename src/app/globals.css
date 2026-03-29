@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+/* -------------------- */
+/* RESET + BASE */
+/* -------------------- */
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: auto; /* IMPORTANT: disable native smooth scroll */
+}
+
+body {
+  overflow-x: hidden;
+  background: #ffffff;
+  color: #000000;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* -------------------- */
+/* LENIS SUPPORT */
+/* -------------------- */
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* -------------------- */
+/* PERFORMANCE OPTIMIZATION */
+/* -------------------- */
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Prevent layout shift during animations */
+[data-gsap] {
+  will-change: transform, opacity;
+}
+
+/* -------------------- */
+/* SCROLLBAR (OPTIONAL CLEAN UI) */
+/* -------------------- */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* -------------------- */
+/* SELECTION */
+/* -------------------- */
+
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth transform performance */
+.carousel-item {
+  will-change: transform;
+}
