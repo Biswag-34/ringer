@@ -1,4 +1,5 @@
-import { DivisionData } from "@/types/division";
+import type { DivisionData } from "@/types/division";
+import { divisionProductLists } from "./products";
 
 export const cardioMetabolic: DivisionData = {
   slug: "cardio-metabolic",
@@ -43,21 +44,7 @@ severe complications if left unmanaged.
     "Preventive healthcare solutions tailored for Indian population",
   ],
 
-  products: [
-    {
-      name: "Probiotic-Based Formulations",
-      composition: "Multi-strain gut microbiota support",
-      form: "Capsule",
-      highlight: "Metabolic regulation",
-      image: "/images/divisions/medicine.png",
-    },
-    {
-      name: "Nutritional Support Range",
-      composition: "Vitamins, minerals, and metabolic cofactors",
-      form: "Tablet",
-      image: "/images/divisions/medicine.png",
-    },
-  ],
+  products: divisionProductLists.cardioMetabolic,
 
   accent: "#ef4444",
 };

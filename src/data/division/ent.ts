@@ -1,4 +1,5 @@
-import { DivisionData } from "@/types/division";
+import type { DivisionData } from "@/types/division";
+import { divisionProductLists } from "./products";
 
 export const ent: DivisionData = {
   slug: "ent",
@@ -36,14 +37,7 @@ sinus conditions, and more complex disorders.
     "Supportive care solutions for chronic ENT conditions",
   ],
 
-  products: [
-    {
-      name: "ENT Care Range",
-      composition: "Anti-inflammatory & supportive formulations",
-      form: "Tablet/Syrup",
-      image: "/images/divisions/medicine.png",
-    },
-  ],
+  products: divisionProductLists.ent,
 
   accent: "#06b6d4",
 };

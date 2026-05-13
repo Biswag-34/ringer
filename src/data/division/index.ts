@@ -2,6 +2,7 @@ import { gastroenterology } from "./gastroenterology";
 import { cardioMetabolic } from "./cardioMetabolic";
 import { neuroscience } from "./neuroscience";
 import { ent } from "./ent";
+import { nutrition } from "./nutrition";
 import { orthoSpine } from "./orthoSpine";
 import { respiratory } from "./respiratory";
 
@@ -10,6 +11,7 @@ export const divisions = [
   cardioMetabolic,
   neuroscience,
   ent,
+  nutrition,
   orthoSpine,
   respiratory,
 ];

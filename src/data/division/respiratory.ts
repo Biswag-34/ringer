@@ -1,4 +1,5 @@
-import { DivisionData } from "@/types/division";
+import type { DivisionData } from "@/types/division";
+import { divisionProductLists } from "./products";
 
 export const respiratory: DivisionData = {
   slug: "respiratory",
@@ -42,14 +43,7 @@ integrated therapeutic approaches.
     "Microbiome-based immune modulation strategies",
   ],
 
-  products: [
-    {
-      name: "Respiratory Care Range",
-      composition: "Anti-allergic & immune-support formulations",
-      form: "Tablet/Syrup",
-      image: "/images/divisions/medicine.png",
-    },
-  ],
+  products: divisionProductLists.respiratory,
 
   accent: "#3b82f6",
 };

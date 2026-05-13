@@ -1,4 +1,5 @@
-import { DivisionData } from "@/types/division";
+import type { DivisionData } from "@/types/division";
+import { divisionProductLists } from "./products";
 
 export const neuroscience: DivisionData = {
   slug: "neuroscience",
@@ -43,15 +44,7 @@ and brain function through the gut-brain axis.
     "Targeting inflammation and neurodegeneration pathways",
   ],
 
-  products: [
-    {
-      name: "Neuro Support Formulations",
-      composition: "Neuroactive nutrients & mitochondrial cofactors",
-      form: "Tablet/Capsule",
-      highlight: "Cognitive & nerve support",
-      image: "/images/divisions/medicine.png",
-    },
-  ],
+  products: divisionProductLists.neuroscience,
 
   accent: "#8b5cf6",
 };

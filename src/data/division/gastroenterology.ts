@@ -1,4 +1,5 @@
-import { DivisionData } from "@/types/division";
+import type { DivisionData } from "@/types/division";
+import { divisionProductLists } from "./products";
 
 export const gastroenterology: DivisionData = {
   slug: "gastroenterology",
@@ -38,56 +39,7 @@ gastric and liver-related diseases globally.
     "Advanced probiotic solutions tailored for Indian microbiome",
   ],
 
-  products: [
-    {
-      name: "SAMeTRAL-400",
-      composition: "Ademetionine 400 mg",
-      form: "Tablet",
-      highlight: "Liver restoration",
-      image: "/images/divisions/medicine.png",
-    },
-    {
-      name: "EVINAF",
-      composition:
-        "Vitamin E 400 IU + Omega 3 (EPA 540 mg + DHA 360 mg)",
-      form: "Soft Gel Capsule",
-      image: "/images/divisions/medicine.png",
-    },
-    {
-      name: "LACTORIN",
-      composition:
-        "Bacillus clausii 2B + Multi probiotics 13B CFU",
-      form: "Capsule",
-      image: "/images/divisions/medicine.png",
-    },
-    {
-      name: "MAXTRUM",
-      composition: "Multivitamin + Multimineral + Antioxidants",
-      form: "Tablet",
-      image: "/images/divisions/medicine.png",
-    },
-    {
-      name: "HEPAZIN",
-      composition:
-        "L-Ornithine L-Aspartate + Zinc",
-      form: "Sachet",
-      image: "/images/divisions/medicine.png",
-    },
-    {
-      name: "ESORIN-IT",
-      composition: "Esomeprazole 40 mg + Itopride 150 mg",
-      form: "Capsule",
-      image: "/images/divisions/medicine.png",
-    },
-    {
-      name: "MGBOOST PLUS",
-      composition:
-        "Triple Liposomal Magnesium + CoQ10 + B2 + TPP",
-      form: "Tablet",
-      highlight: "Mitochondrial energy boost",
-      image: "/images/divisions/medicine.png",
-    },
-  ],
+  products: divisionProductLists.gastroenterology,
 
   accent: "#22c55e",
 };

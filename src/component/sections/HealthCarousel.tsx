@@ -8,10 +8,13 @@ import { Draggable } from "gsap/dist/Draggable";
 gsap.registerPlugin(Draggable);
 
 const data = [
-  { title: "Orthopedic", img: "/images/health1.png" },
-  { title: "Nutrition", img: "/images/health2.png" },
-  { title: "Gynaecology", img: "/images/health3.png" },
-  { title: "Pediatric", img: "/images/health4.png" },
+  { title: "Orthopedic", img: "/images/health5.png" },
+  { title: "Nutrition", img: "/images/health6.png" },
+  { title: "Gastroenterology", img: "/images/health1.png" },
+  { title: "ENT", img: "/images/health2.png" },
+  { title: "Respiratory", img: "/images/health3.png" },
+  { title: "Neuroscience", img: "/images/health4.png" },
+  { title: "Cardiometabolic", img: "/images/health7.png" },
 ];
 
 export default function HealthCarousel() {

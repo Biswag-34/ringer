@@ -106,9 +106,9 @@ export default function ContactPage() {
             <div>
               <h4 className="font-semibold">Head Office</h4>
               <p className="text-[#64748B]">
-                Ringer Lifesciences (India) Pvt Ltd <br />
-                5th Floor, Medical Tower <br />
-                Bandra Kurla Complex, Mumbai 400051
+                438, E/2, HMT Main Rd, near Canara Bank <br />
+                Gokula 1st Stage, HMT Layout, Mathikere <br />
+                Bengaluru, Karnataka 560054
               </p>
             </div>
           </div>
@@ -118,8 +118,7 @@ export default function ContactPage() {
             <div>
               <h4 className="font-semibold">Phone</h4>
               <p className="text-[#64748B]">
-                +91 98765 43210 <br />
-                +91 91234 56789
+                +91 93416 18561
               </p>
             </div>
           </div>
@@ -129,8 +128,7 @@ export default function ContactPage() {
             <div>
               <h4 className="font-semibold">Email</h4>
               <p className="text-[#64748B]">
-                info@ringerlifesciences.com <br />
-                support@ringerlifesciences.com
+                info@ringer.co.in
               </p>
             </div>
           </div>
@@ -207,7 +205,7 @@ export default function ContactPage() {
       <section className="px-6 pb-24">
         <div className="max-w-[1200px] mx-auto rounded-2xl overflow-hidden border border-[#E2E8F0]">
           <iframe
-            src="https://www.google.com/maps?q=Bandra%20Kurla%20Complex%20Mumbai&output=embed"
+            src="https://www.google.com/maps?q=438%2C%20E%2F2%2C%20HMT%20Main%20Rd%2C%20near%20Canara%20Bank%2C%20Gokula%201st%20Stage%2C%20HMT%20Layout%2C%20Mathikere%2C%20Bengaluru%2C%20Karnataka%20560054&output=embed"
             className="w-full h-[400px] md:h-[500px]"
             loading="lazy"
           />

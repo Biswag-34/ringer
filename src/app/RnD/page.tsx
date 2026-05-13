@@ -71,7 +71,7 @@ const clinicalOutcomes = [
 const applicationsData = [
   { title: "Respiratory Disorders", desc: "Asthma, allergic rhinitis, and infections", iconName: "Wind" },
   { title: "Gastrointestinal Health", desc: "Diarrhea, dysbiosis, gut disorders", iconName: "Leaf" },
-  { title: "Liver Health", desc: "Inflammation and detoxification support", iconName: "Activity" },
+  { title: "Liver Health", desc: "Inflammation, Fatty Liver, Fibrosis", iconName: "Activity" },
   { title: "Allergic Diseases", desc: "Reduced hypersensitivity reactions", iconName: "Shield" },
   { title: "Systemic Infections", desc: "Improved immune response", iconName: "Zap" },
   { title: "Adjunct Therapy", desc: "Enhanced treatment effectiveness", iconName: "Sparkles" },

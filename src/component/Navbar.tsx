@@ -23,7 +23,8 @@ import {
   GiHeartOrgan, 
   GiLungs, 
   GiSpineArrow, 
-  GiEarrings
+ GiNoseSide,
+ GiHealing
 } from "react-icons/gi";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -67,16 +68,17 @@ export default function Header() {
       id: "divisions",
       dropdown: [
         { name: "Gastroenterology", href: "/Divisions/gastroenterology", icon: <GiStomach /> },
+        { name: "Otorhinolaryngology", href: "/Divisions/ent", icon: <GiNoseSide/> },
+        { name: "Respiratory", href: "/Divisions/respiratory", icon: <GiLungs /> },
         { name: "Neuroscience", href: "/Divisions/neuroscience", icon: <GiBrain /> },
         { name: "Orthopedics & Spine", href: "/Divisions/orthopaedics-spine", icon: <GiSpineArrow /> },
-        { name: "Respiratory", href: "/Divisions/respiratory", icon: <GiLungs /> },
-        { name: "Otorhinolaryngology", href: "/Divisions/ent", icon: <GiEarrings /> },
+        { name: "Nutrition", href: "/Divisions/nutrition", icon: <GiHealing /> },
         { name: "Cardiometabolic", href: "/Divisions/cardio-metabolic", icon: <GiHeartOrgan /> },
       ]
     },
     { 
       name: "Events", 
-      href: "/Events",
+      href: "/events",
       icon: <FaCalendarAlt />, 
       id: "events",
       dropdown: [
@@ -90,7 +92,7 @@ export default function Header() {
     { name: "R&D", href: "/RnD", icon: <FaFlask />, id: "rd" },
     { 
       name: "Life @ Ringer", 
-      href: "/LifeAtRinger",
+      href: "/lifeatringer",
       icon: <FaUsers />, 
       id: "life",
       dropdown: [
@@ -145,6 +147,7 @@ export default function Header() {
                 src="/images/logo.png"
                 alt="Ringer Logo"
                 fill
+                loading="eager"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-contain"
               />
@@ -290,7 +293,8 @@ export default function Header() {
                 <div className="flex items-center justify-between mb-8">
                   <Link href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
                     <div className="w-8 h-8 relative">
-                      <Image src="/logo.png" alt="Logo" fill className="object-contain" />
+                      <Image src="/logo.png" 
+                      loading="lazy" alt="Logo" fill className="object-contain" />
                     </div>
                     <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
                       Ringer

@@ -132,7 +132,7 @@ export default function About() {
             </p>
 
             <p className="about-para mt-4 text-[16.5px] leading-[1.7] text-gray-700">
-              Our work focuses on interconnected biological systems such as the Gut–Brain Axis and Gut–Airway Axis,
+              Our work focuses on interconnected biological systems such as the Gut–Brain Axis, Gut-Liver Axis and Gut–Airway Axis,
               enabling the development of therapies that improve overall health outcomes rather than isolated symptoms.
             </p>
 

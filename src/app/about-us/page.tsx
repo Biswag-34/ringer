@@ -47,7 +47,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="mt-6 text-[#64748B] max-w-xl mx-auto">
-            Transforming healthcare by decoding the Gut–Brain and Gut–Airway
+            Transforming healthcare by decoding the Gut–Brain, Gut-Liver axis and Gut–Airway 
             connection through advanced research and innovation.
           </p>
         </motion.div>
@@ -105,7 +105,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-16">
+          <div className="grid md:grid-cols-3 gap-16">
 
             {/* Gut-Brain */}
             <motion.div
@@ -127,6 +127,29 @@ export default function AboutPage() {
                 Our research explores how gut microbiota influence neurological
                 health, cognitive function, and immune regulation—supporting
                 therapies for neurological disorders and inflammatory conditions.
+              </p>
+            </motion.div>
+             
+           {/* Gut-Liver */}
+            <motion.div
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              className="bg-[#F8FAFC] p-10 rounded-2xl border border-[#E2E8F0] shadow-sm"
+            >
+              <h3 className="text-2xl font-semibold text-[#0EA5A4] mb-4">
+                Gut–Liver Axis
+              </h3>
+
+              <p className="text-[#475569] mb-4">
+                The Gut–Liver Axis highlights the connection between gut health
+                and liver function.
+              </p>
+
+              <p className="text-[#64748B]">
+                We investigate how gut microbiota influence liver diseases,
+                metabolic disorders, and immune responses, guiding the development
+                of therapies that target both gut and liver health for improved
+                patient outcomes.
               </p>
             </motion.div>
 
@@ -213,7 +236,7 @@ export default function AboutPage() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="p-6 bg-white border border-[#E2E8F0] rounded-xl shadow-sm text-center text-[#475569] hover:shadow-md transition"
+                className="p-4 font-bold bg-white border border-[#E2E8F0] rounded-xl shadow-sm text-center text-[#475569] hover:shadow-md transition"
               >
                 {item}
               </div>
@@ -243,7 +266,7 @@ export default function AboutPage() {
             <motion.div
               key={i}
               whileHover={{ y: -10 }}
-              className="p-8 rounded-2xl bg-white shadow-md border border-[#E2E8F0] text-center"
+              className="p-6 font-bold text-md text-[#0EA5A4] rounded-2xl bg-white shadow-md border border-none text-center"
             >
               {value}
             </motion.div>

@@ -1,6 +1,7 @@
   // /app/page.tsx
   import Hero from "@/component/sections/Hero";
   import About from "@/component/sections/About";
+  import VisionMission from "@/component/sections/VisionMission";
   import Business from "@/component/sections/Business";
   import HealthCarousel from "@/component/sections/HealthCarousel";
   import LifeAtEris from "@/component/sections/LifeatEris";
@@ -20,6 +21,9 @@
 
         {/* Section 2 */}     
           <About />
+
+        {/* Section 2.5 */}
+          <VisionMission />
         
         {/* Section 3 */}   
           <Business />

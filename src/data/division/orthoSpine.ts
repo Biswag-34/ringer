@@ -1,4 +1,5 @@
-import { DivisionData } from "@/types/division";
+import type { DivisionData } from "@/types/division";
+import { divisionProductLists } from "./products";
 
 export const orthoSpine: DivisionData = {
   slug: "orthopaedics-spine",
@@ -35,15 +36,7 @@ Recent research highlights non-opioid approaches for pain management and recover
     "Bone health and recovery-focused formulations",
   ],
 
-  products: [
-    {
-      name: "Magnesium-Based Therapy",
-      composition: "Magnesium citrate & cofactors",
-      form: "Tablet",
-      highlight: "Pain reduction & recovery",
-      image: "/images/divisions/medicine.png",
-    },
-  ],
+  products: divisionProductLists.orthoSpine,
 
   accent: "#f59e0b",
 };

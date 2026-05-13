@@ -3,13 +3,17 @@ export interface DivisionProduct {
   composition: string;
   form: string;
   highlight?: string;
-  image: string; // ✅ NEW
+  image: string;
+  normalImage?: string;
+  detailImage?: string;
+  keyIngredient?: string;
+  fullIngredients?: string;
 }
 
 export interface DivisionInsight {
   title: string;
   description: string;
-  image: string; // ✅ NEW
+  image: string;
 }
 
 export interface DivisionData {
@@ -27,8 +31,7 @@ export interface DivisionData {
 
   accent: string;
 
-  // ✅ IMAGES (STRUCTURED)
-  heroImage: string;              // hero background
-  introImage: string;             // intro left image
-  contributionImage: string;      // contribution right image
+  heroImage: string;
+  introImage: string;
+  contributionImage: string;
 }

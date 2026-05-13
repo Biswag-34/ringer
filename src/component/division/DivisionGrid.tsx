@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Brain, Heart, Wind, Activity, Ear, LucideIcon } from "lucide-react";
+import { Brain, Heart, Wind, Activity, Ear, Leaf, LucideIcon } from "lucide-react";
 import { DivisionData } from "@/types/division";
 import Image from "next/image";
 
@@ -18,6 +18,7 @@ const iconMap: Record<string, LucideIcon> = {
   "cardio-metabolic": Heart,
   gastroenterology: Activity,
   respiratory: Wind,
+  nutrition: Leaf,
   "orthopaedics-spine": Activity,
   ent: Ear,
 };

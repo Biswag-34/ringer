@@ -16,14 +16,14 @@ const slides = [
   {
     desktop: "/images/desktop2.png",
     mobile: "/images/mobile2.png",
-    title: "Engineering the Future of Healthcare",
+    title: "Innovating the Future of Healthcare",
     subtitle: "Precision microbiome science meets clinical innovation.",
   },
   {
     desktop: "/images/desktop3.png",
     mobile: "/images/mobile3.png",
-    title: "The Science of Connection",
-    subtitle: "Where the gut influences the brain, immunity, and beyond.",
+    title: "The Science of GUT Connection",
+    subtitle: "Where the gut influences the Liver, Brain, Immunity, Lungs and beyond.",
   },
 ];
 
@@ -98,7 +98,8 @@ export default function Hero() {
           <Image
             src={current.desktop}
             alt="Hero"
-            fill
+            fill={true}
+            loading="eager"
              sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
           />
