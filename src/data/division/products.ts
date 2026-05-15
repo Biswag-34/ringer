@@ -140,9 +140,9 @@ export const medicineProducts = {
     fullIngredients:
       "Pregabalin IP: 75mg+ Nortriptyline Hydrochloride IP equivalent to Nortriptyline: 10mg+ Methylcobalamin IP: 1500mcg",
     form: "Tablet",
-    image: normalImage("neumeco-n.png"),
-    normalImage: normalImage("neumeco-n.png"),
-    detailImage: detailImage("neumeco.png"),
+    image: normalImage("neumeco-np-n.png"),
+    normalImage: normalImage("neumeco-np-n.png"),
+    detailImage: detailImage("neumeco-np.png"),
   },
   secorinSp: {
     name: "SECORIN SP",

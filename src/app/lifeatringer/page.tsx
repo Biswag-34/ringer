@@ -21,7 +21,7 @@ const sections = [
     title: "Our Team",
     description: "Meet the brilliant minds behind our innovation and success",
     icon: Users,
-    href: "/LifeAtRinger/our-team",
+    href: "/lifeatringer/our-team",
     color: "from-blue-500 to-cyan-500",
     stats: "45+ Members",
     image: "/images/health1.png",
@@ -30,7 +30,7 @@ const sections = [
     title: "Careers",
     description: "Join us in shaping the future of healthcare",
     icon: Briefcase,
-    href: "/LifeAtRinger/careers",
+    href: "/lifeatringer/careers",
     color: "from-purple-500 to-pink-500",
     stats: "5 Open Positions",
     image: "/images/health1.png",
@@ -39,7 +39,7 @@ const sections = [
     title: "Important Links",
     description: "Resources, policies, and essential information",
     icon: LinkIcon,
-    href: "/LifeAtRinger/important-links",
+    href: "/lifeatringer/important-links",
     color: "from-green-500 to-emerald-500",
     stats: "12 Resources",
     image: "/images/health1.png",
@@ -149,7 +149,7 @@ export default function LifeAtRingerPage() {
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">{section.stats}</span>
                     <span className="text-blue-600 group-hover:translate-x-2 transition-transform duration-300">
-                      Explore →
+                      Explore
                     </span>
                   </div>
                 </div>
@@ -221,7 +221,7 @@ export default function LifeAtRingerPage() {
               Join us in our mission to revolutionize healthcare through
               innovative research and development.
             </p>
-            <Link href="/LifeAtRinger/careers">
+            <Link href="/lifeatringer/careers">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

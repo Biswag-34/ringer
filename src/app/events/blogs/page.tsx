@@ -13,6 +13,8 @@ export default function BlogsPage() {
         description="Coming soon - Insights, articles, and thought leadership"
         icon={BookOpen}
         count={0}
+        showIcon={false}
+        showCount={false}
       />
 
       {/* Empty State */}
@@ -38,7 +40,7 @@ export default function BlogsPage() {
           <div className="flex items-center justify-center gap-6 text-sm text-gray-500">
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
-              <span>Launching March 2025</span>
+              <span>Editorial updates</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4" />

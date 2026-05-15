@@ -10,6 +10,8 @@ interface EventHeroProps {
   icon: LucideIcon;
   count: number;
   bgImage?: string;
+  showIcon?: boolean;
+  showCount?: boolean;
 }
 
 export default function EventHero({ 
@@ -17,10 +19,12 @@ export default function EventHero({
   description, 
   icon: Icon, 
   count,
-  bgImage = "/images/health1.png" 
+  bgImage = "/images/health1.png",
+  showIcon = true,
+  showCount = true,
 }: EventHeroProps) {
   return (
-    <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-28 pb-16">
       <div className="absolute inset-0">
         <Image
           src={bgImage}
@@ -44,14 +48,16 @@ export default function EventHero({
         transition={{ duration: 0.8 }}
         className="relative z-10 text-center max-w-4xl px-6"
       >
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-          className="w-16 h-16 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center justify-center mx-auto mb-6 shadow-lg"
-        >
-          <Icon className="w-8 h-8 text-white" />
-        </motion.div>
+        {showIcon && (
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+            className="w-16 h-16 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center justify-center mx-auto mb-6 shadow-lg"
+          >
+            <Icon className="w-8 h-8 text-white" />
+          </motion.div>
+        )}
         
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
@@ -71,15 +77,17 @@ export default function EventHero({
           {description}
         </motion.p>
         
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.5 }}
-          className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-gray-100"
-        >
-          <span className="text-sm text-gray-600">Total Events:</span>
-          <span className="text-sm font-semibold text-blue-600">{count}</span>
-        </motion.div>
+        {showCount && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.5 }}
+            className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-gray-100"
+          >
+            <span className="text-sm text-gray-600">Total Events:</span>
+            <span className="text-sm font-semibold text-blue-600">{count}</span>
+          </motion.div>
+        )}
       </motion.div>
     </section>
   );

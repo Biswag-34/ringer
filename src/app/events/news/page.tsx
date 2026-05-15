@@ -13,6 +13,8 @@ export default function NewsPage() {
         description="Coming soon - Latest updates and announcements"
         icon={Newspaper}
         count={0}
+        showIcon={false}
+        showCount={false}
       />
 
       {/* Empty State */}
@@ -38,11 +40,11 @@ export default function NewsPage() {
           <div className="flex items-center justify-center gap-6 text-sm text-gray-500">
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
-              <span>Launching April 2025</span>
+              <span>Company updates</span>
             </div>
             <div className="flex items-center gap-2">
               <Bell className="w-4 h-4" />
-              <span>Subscribe for Updates</span>
+              <span>Stay tuned</span>
             </div>
           </div>
         </motion.div>

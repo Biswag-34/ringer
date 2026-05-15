@@ -192,7 +192,7 @@ export default function RDPage() {
       </div>
 
       {/* HERO SECTION */}
-      <section className="relative min-h-screen flex items-center justify-center text-center px-6 overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center text-center px-6 pt-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-teal-50 via-white to-blue-50" />
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
@@ -214,15 +214,6 @@ export default function RDPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.5, duration: 0.6, type: "spring" }}
-              className="w-16 h-16 rounded-2xl bg-gradient-to-r from-teal-500 to-blue-600 flex items-center justify-center mx-auto mb-8 shadow-2xl"
-            >
-              <Icons.Microscope className="w-8 h-8 text-white" />
-            </motion.div>
-
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: "100px" }}
