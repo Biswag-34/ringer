@@ -15,26 +15,26 @@ multiple super-specialties.
 
   heroImage: "/images/divisions/division-bg.png",
   introImage: "/images/health6.png",
-  contributionImage: "/images/health6.png",
+  contributionImage: "/images/divisions/Nutri/contribution.png",
 
   keyInsights: [
     {
       title: "Micronutrients Shape Systems Biology",
       description:
         "Targeted nutritional interventions can influence immune signaling, mitochondrial function, and tissue repair across gut, liver, cardiac, and neurological pathways.",
-      image: "/images/health6.png",
+      image: "/images/divisions/Nutri/insight1.png",
     },
     {
       title: "The Microbiome Depends on Nutrition",
       description:
         "Diet quality and bioavailable nutrients help regulate microbiome diversity, intestinal barrier strength, and inflammatory load in chronic disease states.",
-      image: "/images/health6.png",
+      image: "/images/divisions/Nutri/insight2.png",
     },
     {
       title: "Bioavailability Drives Clinical Outcomes",
       description:
         "Advanced delivery formats such as liposomal nutrition improve absorption and help clinicians achieve more dependable therapeutic response.",
-      image: "/images/health6.png",
+      image: "/images/divisions/Nutri/insight3.png",
     },
   ],
 
